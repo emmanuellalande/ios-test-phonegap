@@ -1,0 +1,266 @@
+
+* {    margin: 0;padding:0;font-size:100%;border:0;}
+
+
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    font-family: Arial, sans-serif;
+    color: #222527;
+    height:1000px;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    font-size: 1.250em;
+}
+
+/* -------- Menu Tuto ----------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------*/
+#menuTutoriel{
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 11111;
+  background-color: #222527;
+  color: #f8f8f8;
+}
+
+#menuTutoriel h1{
+  font-size: 1.500em;
+  background-color: blue;
+  background-color: #222527;
+  padding: 22px 22px 22px 18px;
+}
+
+#menuTutoriel h2{
+  font-size: 1.125em;
+  border-top: 2px solid #4a4d4e;
+  border-bottom: 2px solid #131617;
+  background-color: #2a2e30;
+  padding: 7px 7px 7px 18px;
+}
+
+#menuTutoriel ul li{
+  font-size: 1.250em;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  padding: 25px 0 0 18px;
+  border-top: 2px solid #57595a;
+  border-bottom: 2px solid #131617;
+  background-color: #222527;
+  list-style: none;
+}
+
+#menuTutoriel a{
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+#menuTutoriel img{
+  float: left;
+  height: 35px;
+  width: 35px;
+  margin: -5px 9px 0 0;
+}
+
+.selected{  color: #0d87c6;}
+
+/* -------- Header -------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------*/
+header {
+   position:fixed;
+   left:0%;
+   top:0%;
+   z-index: 33333;
+   height: 100px;
+   width: 100%;
+   background-color: #222527;
+   border-bottom: 2px solid #121415;
+
+   -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+   -moz-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+   -box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+header #btnMenuTutoriel{
+  float: left;
+  height: 55px;
+  width: 75px;
+  background-color: #2e3234;
+  background-image: url("../img/bgBtnMenuTutoriel.png");
+  margin: 22px 0 0 20px;
+  border: 2px solid #131617;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -o-border-radius: 9px;
+  border-radius: 9px;
+}
+
+header #logo{
+    height: 100px;
+    width: 74px;
+    background-image: url("../img/logoPhoneGap.png");
+    margin: 0 auto 0 auto;
+}
+
+/* -------- Contenu ------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------*/
+#wrapperContenu{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 99999;
+    background-image:url("../img/background.png");
+    background-color:#E4E4E4;
+
+    -webkit-box-shadow: -10px 0px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    -10px 0px 5px rgba(0, 0, 0, 0.5);
+    box-shadow:         -10px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+section{
+    width: 90%;
+    margin: 150px auto 0 auto;
+}
+
+section h1{
+    font-size: 2.00em;
+    text-align: center;
+    margin: 0 0 7px 0;
+}
+
+section h3{
+   font-size: 1.000em;
+   text-align: center;
+}
+
+section p{
+    margin: 0 0 7px 0;
+}
+
+section .imagePrincipale{
+    display: block;
+    width: 80%;
+    margin: 0 auto 12px auto;
+}
+
+section article{
+    border: 1px solid #85939e;
+    background-color: #c0c0c0;
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top bottom, #C0C0C0 0%, #adadad 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top bottom, #C0C0C0 0%, #adadad 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(top bottom, #C0C0C0 0%, #adadad 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #C0C0C0), color-stop(1, #adadad));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top bottom, #C0C0C0 0%, #adadad 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom, #C0C0C0 0%, #adadad 100%);
+        margin: 0 0 24px 0;
+        padding: 4%;
+}
+
+section article h2{
+    font-size: 1.375em;
+    margin: 0 0 7px 0;
+}
+
+section article ul{  margin: 0 0 7px 5%;}
+
+section article ul li{  list-style: none;}
+
+section article ul li span{  font-weight: bold;}
+
+section article a{
+    color: #0d87c6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section #btnScrollTop{
+  width: 320px;
+  height: 60px;
+  margin: 0 auto 24px auto;
+  background-image: url("../img/bgBtnScrollTop.jpg");
+  background-color: #c2c2c2;
+  border: 1px solid #85939e;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+section #btnScrollTop p{
+  padding-top: 18px;
+}
+
+table{
+    width: 90%;
+    border-spacing: 0;
+    margin: 0 0 24px 0;
+}
+
+table tr th{
+    background-color: #222527;
+    color: #f8f8f8;
+    padding: 7px;
+}
+
+table tr{
+    background-color: #ebecec;
+}
+
+table tr.impair{
+  background-color: #d8dfe2;
+}
+
+table tr td{
+    border: 1px solid #222527;    
+    padding: 7px;
+    color: #5e7682;
+    font-weight: bold;
+}
+
+/* -------- Footers -------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------*/
+footer{
+   height: 40px;
+   width: 100%;
+   background-color: #222527;
+   border-top: 2px solid #121415;
+   color: #efefef;
+   margin: 0 0 12px 0;
+}
+
+footer p{
+   width: 100%;
+   text-align: center;
+   padding-top: 8px;
+   margin: 0;
+}
+
+
+
+
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    section h1{
+    font-size: 3.00em;
+    }
+
+    section h3{
+      font-size: 1.250em;
+    }
+
+
+}

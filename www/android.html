@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Tutoriel développé pour tester PhoneGap-->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js">\x3C/script>')</script>
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/scroll.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>Tutoriel PhoneGap</title>
+	</head>
+	<body>
+		<div id="menuTutoriel">
+			<a href="index.html"><h1>Tutoriel PhoneGap</h1></a>
+			<h2>Sections</h2>
+			<ul>
+				<a href="android.html" class="selected"><li><img src="img/iconAndroid.png"/>Tutoriel Android</li></a>
+				<a href="ios.html"><li><img src="img/iconApple.png"/>Tutoriel iOS</li></a>
+				<a href="a_propos.html"><li><img src="img/iconAbout.png"/>À propos</li></a>
+				<a href="plateformes.html"><li><img src="img/iconPlateformes.png"/>Platformes</li></a>
+			</ul>
+		</div>
+		<div id="wrapperContenu">
+			<header>
+				<div id="btnMenuTutoriel"></div>
+				<div id="logo"></div>
+			</header>
+			<section>
+				<h1>Tutoriel Android</h1>
+				<img class="imagePrincipale" src="img/animateBot.png"/>
+				<article>
+					<h2>1. Télécharger un JDK (java Developement Kit) nécessaire au fonctionnement d’Eclipse</h2>
+					<p>Pour que l’exécutable (.exe) d’Eclipse puisse être lancé, j’ai dû installer un JDK. J’avais une erreur qui indiquait: A java Runtime Environment (JRE) or Java Development kit (JDK) must be available in order to run Eclipse.</p>
+					<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Télécharger le JDK</a>
+				</article>
+				 <article>
+					<h2>2. Télécharger et installer la dernière version d'Eclipse Classic</h2>
+					<p>Afin de lancer une simulation de notre application sur Android, nous allons utiliser Eclipse. Pour ma part j’ai utilisé la version 4.2.2 disponible gratuitement sur leur site web.</p>
+					<a href="http://www.eclipse.org/downloads/">Télécharger Eclipse</a>
+				</article>
+				 <article>
+					<h2>3. Télécharger et installer le SDK (Software Developement Kit) d’Android</h2>
+					<p>Une fois le SDK Manager ouvert, il faut installer une version d’un Android Software et l’Android SDK Platform-tools disponible sous le fichier Tools.</p>
+					<a href="http://developer.android.com/sdk/index.html">Télécharger le SDK d'Android</a>
+				</article>
+				 <article>
+					<h2>4. Télécharger et installer le plugin ADT (Android Development Tools)</h2>
+					<ul>
+						<li><span>4.1</span> Dans le menu d’Eclipse, allez dans Help</li>
+						<li><span>4.2</span> Install new software --> Add</li>
+						<li><span>4.3</span> Attribuer un nom et son lien d'emplacement (https://dl-ssl.google.com/android/eclipse/)</li>
+						<li><span>4.4</span> next --> Finish</li>
+					</ul>
+					<p></p>
+				</article>
+				 <article>
+					<h2>5. Télécharger la dernière version de PhoneGap</h2>
+					<p></p>
+					<a href="http://phonegap.com/download/">Télécharger PhoneGap</a>
+				</article>
+				 <article>
+					<h2>6. Dans Eclipse, créer un nouveau Adroid Application Project</h2>
+					<ul>
+						<li><span>6.1</span> File</li>
+						<li><span>6.2</span> New</li>
+						<li><span>6.3</span> Android Application Project</li>
+					</ul>
+					<p>Si l’option Android Application Project n’est pas disponible, aller dans l’onglet Window et cliquer sur Reset Perspective. Elle devrait maintenant être disponible.</p>
+				</article>
+				<article>
+					<h2>7. Ajouter un émulateur sur Android</h2>
+					<p></p>
+					<ul>
+						<li><span>7.1</span> Window --> Android Virtual Device Manager</li>
+						<li><span>7.2</span> New</li>
+						<li><span>7.3</span> Choisir le modèle d’appareil émulé, ainsi que la version d’exploitation visée</li>
+					</ul>
+				</article>
+				<article>
+					<h2>8. Lancer l’application avec l’emulateur Android</h2>
+					<p>Une fois le projet créé, que le projet est créé :</p>
+					<ul>
+						<li><span>8.1</span> Clic droit sur le projet dans le Package Explorer</li>
+						<li><span>8.2</span> Run as  Android Aplication</li>
+					</ul>
+				</article>
+				 <article>
+					<h2>9. Enjoy !!!</h2>
+					<p></p>
+				</article>
+				<div id="btnScrollTop"><p>Haut de page</p></div>
+			</section>
+			<footer>
+				<p>2013 © Patrick Freedom Mayer</p>
+			</footer>
+		</div>
+		<script type="text/javascript" src="cordova-2.5.0.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+			app.initialize();
+		</script>
+	</body>
+</html>

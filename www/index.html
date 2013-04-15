@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- Tutoriel développé pour tester PhoneGap-->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js">\x3C/script>')</script>
+
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.mobile-1.3.0.min.js"></script>
+
+		<script type="text/javascript" src="js/plugins/CSSPlugin.min.js"></script>
+		<script src="js/easing/EasePack.min.js"></script>
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/jquery.gsap.min.js"></script>
+
+		<script type="text/javascript" src="js/scroll.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>Tutoriel PhoneGap</title>
+	</head>
+	<body>
+		<div id="menuTutoriel">
+			<h1>Tutoriel PhoneGap</h1>
+			<h2>Sections</h2>
+			<ul>
+				<li class="android"><img src="img/iconAndroid.png"/>Tutoriel Android</li>
+				<li class="ios"><img src="img/iconApple.png"/>Tutoriel iOS</li>
+				<li class="about"><img src="img/iconAbout.png"/>À propos</li>
+				<li class="plateformes"><img src="img/iconPlateformes.png"/>Platformes</li>
+			</ul>
+		</div>
+		<div id="wrapperContenu">
+			<header>
+				<div id="btnMenuTutoriel"></div>
+				<div id="logo"></div>
+			</header>
+			<section id="index">
+				<h1>Tutoriel PhoneGap</h1>
+				<h3>par: Patrick Freedom Mayer</h3>
+				<img class="imagePrincipale" src="img/indexImagePrincipale.png"/>				
+				 <article>					
+					<h2>Créer des applications en utilisant les technologies web que vous aimez!</h2>
+					<p>PhoneGap est un framework libre et open source qui vous permet de créer des applications mobiles en utilisant des API Web standard pour les plates-formes qui vous intéressent.</p>
+				</article>
+				<article>					
+					<h2>Vous êtes développeur ?</h2>
+					<p>Commencez dès maintenant à construire des applications mobiles en utilisant PhoneGap! Suivez les étapes sur nos tutoriels, que ce soit pour <a href="android.html">Android</a> ou bien pour <a href="ios.html">iOs</a>.</p>
+				</article>
+				<div id="btnScrollTop"><p>Haut de page</p></div>
+			</section>
+			<section id="android">
+				<h1>Tutoriel Android</h1>
+				<img class="imagePrincipale" src="img/animateBot.png"/>
+				<article>
+					<h2>1. Télécharger un JDK (java Developement Kit) nécessaire au fonctionnement d’Eclipse</h2>
+					<p>Pour que l’exécutable (.exe) d’Eclipse puisse être lancé, j’ai dû installer un JDK. J’avais une erreur qui indiquait: A java Runtime Environment (JRE) or Java Development kit (JDK) must be available in order to run Eclipse.</p>
+					<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Télécharger le JDK</a>
+				</article>
+				 <article>
+					<h2>2. Télécharger et installer la dernière version d'Eclipse Classic</h2>
+					<p>Afin de lancer une simulation de notre application sur Android, nous allons utiliser Eclipse. Pour ma part j’ai utilisé la version 4.2.2 disponible gratuitement sur leur site web.</p>
+					<a href="http://www.eclipse.org/downloads/">Télécharger Eclipse</a>
+				</article>
+				 <article>
+					<h2>3. Télécharger et installer le SDK (Software Developement Kit) d’Android</h2>
+					<p>Une fois le SDK Manager ouvert, il faut installer une version d’un Android Software et l’Android SDK Platform-tools disponible sous le fichier Tools.</p>
+					<a href="http://developer.android.com/sdk/index.html">Télécharger le SDK d'Android</a>
+				</article>
+				 <article>
+					<h2>4. Télécharger et installer le plugin ADT (Android Development Tools)</h2>
+					<ul>
+						<li><span>4.1</span> Dans le menu d’Eclipse, allez dans Help</li>
+						<li><span>4.2</span> Install new software --> Add</li>
+						<li><span>4.3</span> Attribuer un nom et son lien d'emplacement (https://dl-ssl.google.com/android/eclipse/)</li>
+						<li><span>4.4</span> next --> Finish</li>
+					</ul>
+					<p></p>
+				</article>
+				 <article>
+					<h2>5. Télécharger la dernière version de PhoneGap</h2>
+					<p></p>
+					<a href="http://phonegap.com/download/">Télécharger PhoneGap</a>
+				</article>
+				 <article>
+					<h2>6. Dans Eclipse, créer un nouveau Adroid Application Project</h2>
+					<ul>
+						<li><span>6.1</span> File</li>
+						<li><span>6.2</span> New</li>
+						<li><span>6.3</span> Android Application Project</li>
+					</ul>
+					<p>Si l’option Android Application Project n’est pas disponible, aller dans l’onglet Window et cliquer sur Reset Perspective. Elle devrait maintenant être disponible.</p>
+				</article>
+				<article>
+					<h2>7. Ajouter un émulateur sur Android</h2>
+					<p></p>
+					<ul>
+						<li><span>7.1</span> Window --> Android Virtual Device Manager</li>
+						<li><span>7.2</span> New</li>
+						<li><span>7.3</span> Choisir le modèle d’appareil émulé, ainsi que la version d’exploitation visée</li>
+					</ul>
+				</article>
+				<article>
+					<h2>8. Lancer l’application avec l’emulateur Android</h2>
+					<p>Une fois le projet créé, que le projet est créé :</p>
+					<ul>
+						<li><span>8.1</span> Clic droit sur le projet dans le Package Explorer</li>
+						<li><span>8.2</span> Run as  Android Aplication</li>
+					</ul>
+				</article>
+				 <article>
+					<h2>9. Enjoy !!!</h2>
+					<p></p>
+				</article>
+				<div id="btnScrollTop"><p>Haut de page</p></div>
+			</section>
+			<section id="ios">
+				<h1>Tutoriel iOS</h1>
+				<img class="imagePrincipale" src="img/iosImagePrincipale.png"/>
+				<article>
+					<h2>1. Télécharger un JDK (java Developement Kit) nécessaire au fonctionnement d’Eclipse</h2>
+					<p>Pour que l’exécutable (.exe) d’Eclipse puisse être lancé, j’ai dû installer un JDK. J’avais une erreur qui indiquait: A java Runtime Environment (JRE) or Java Development kit (JDK) must be available in order to run Eclipse.</p>
+					<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Télécharger le JDK</a>
+				</article>
+				 <article>
+					<h2>2. Télécharger et installer la dernière version d'Eclipse Classic</h2>
+					<p>Afin de lancer une simulation de notre application sur Android, nous allons utiliser Eclipse. Pour ma part j’ai utilisé la version 4.2.2 disponible gratuitement sur leur site web.</p>
+					<a href="http://www.eclipse.org/downloads/">Télécharger Eclipse</a>
+				</article>
+				 <article>
+					<h2>3. Télécharger et installer le SDK (Software Developement Kit) d’Android</h2>
+					<p>Une fois le SDK Manager ouvert, il faut installer une version d’un Android Software et l’Android SDK Platform-tools disponible sous le fichier Tools.</p>
+					<a href="http://developer.android.com/sdk/index.html">Télécharger le SDK d'Android</a>
+				</article>
+				 <article>
+					<h2>4. Télécharger et installer le plugin ADT (Android Development Tools)</h2>
+					<ul>
+						<li><span>4.1</span> Dans le menu d’Eclipse, allez dans Help</li>
+						<li><span>4.2</span> Install new software --> Add</li>
+						<li><span>4.3</span> Attribuer un nom et son lien d'emplacement (https://dl-ssl.google.com/android/eclipse/)</li>
+						<li><span>4.4</span> next --> Finish</li>
+					</ul>
+					<p></p>
+				</article>
+				 <article>
+					<h2>5. Télécharger la dernière version de PhoneGap</h2>
+					<p></p>
+					<a href="http://phonegap.com/download/">Télécharger PhoneGap</a>
+				</article>
+				 <article>
+					<h2>6. Dans Eclipse, créer un nouveau Adroid Application Project</h2>
+					<ul>
+						<li><span>6.1</span> File</li>
+						<li><span>6.2</span> New</li>
+						<li><span>6.3</span> Android Application Project</li>
+					</ul>
+					<p>Si l’option Android Application Project n’est pas disponible, aller dans l’onglet Window et cliquer sur Reset Perspective. Elle devrait maintenant être disponible.</p>
+				</article>
+				<article>
+					<h2>7. Ajouter un émulateur sur Android</h2>
+					<p></p>
+					<ul>
+						<li><span>7.1</span> Window --> Android Virtual Device Manager</li>
+						<li><span>7.2</span> New</li>
+						<li><span>7.3</span> Choisir le modèle d’appareil émulé, ainsi que la version d’exploitation visée</li>
+					</ul>
+				</article>
+				<article>
+					<h2>8. Lancer l’application avec l’emulateur Android</h2>
+					<p>Une fois le projet créé, que le projet est créé :</p>
+					<ul>
+						<li><span>8.1</span> Clic droit sur le projet dans le Package Explorer</li>
+						<li><span>8.2</span> Run as  Android Aplication</li>
+					</ul>
+				</article>
+				 <article>
+					<h2>9. Enjoy !!!</h2>
+					<p></p>
+				</article>
+				<div id="btnScrollTop"><p>Haut de page</p></div>
+			</section>
+			<section id="about">
+				<h1>PhoneGap c'est quoi?</h1>
+				<img class="imagePrincipale" src="img/diagramPackage.png"/>
+				<p>PhoneGap est un framework open-source de développement mobile développé par Nitobi Software (racheté par Adobe Systems). Il permet de créer des applications pour appareils mobiles utilisant JavaScript, HTML5 et CSS3, au lieu de langages moins connus tels que l'Objective-C. Les applications qui en résultent sont hybrides, ce qui signifie qu'elles ne sont ni vraiment natives, ni purement basées sur le Web.</p>
+				<p>PhoneGap est désormais connu, depuis le rachat de Nitobi par Adobe et PhoneGap 1.2, sous le nom de Apache Callback et plus récent sous le nom de Apache Cordova, le nom "Callback" ayant été jugé comme trop générique.</p>
+				<div id="btnScrollTop"><p>Haut de page</p></div>
+			</section>
+			<section id="plateformes">
+				<h1>Plateformes</h1>
+				<img class="imagePrincipale" src="img/diagramDevices.png"/>
+				<p>Les chartes ci-dessous démontrent quels Api sont disponibles sur chacun des appareils. Pour plus d'information, prenez connaissance de la <a href="http://docs.phonegap.com/en/2.6.0/index.html">documentation de phonegap</a>.</p>
+				<table>
+					<tr>
+						<th></th>
+						<th>iPhone 3GS et +</th>
+						<th>Android</th>
+						<th>Windows Phone 7 + 8</th>
+					</tr>
+					<tr class="impair">
+						<td>Accelerometer</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr>
+						<td>Camera</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr class="impair">
+						<td>Compass</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr>
+						<td>Contacts</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr class="impair">
+						<td>File</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr>
+						<td>Geolocation</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr class="impair">
+						<td>Media</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr>
+						<td>Network</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr class="impair">
+						<td>Notification</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>				
+					<tr>
+						<td>Storage</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<th></th>
+						<th>Blackberry OS 6.0+</th>
+						<th>WebOS</th>
+						<th>Symbian</th>
+					</tr>
+					<tr class="impair">
+						<td>Accelerometer</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr>
+						<td>Camera</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr class="impair">
+						<td>Compass</td>
+						<td>X</td>
+						<td>✓</td>
+						<td>X</td>
+					</tr>
+					<tr>
+						<td>Contacts</td>
+						<td>✓</td>
+						<td>X</td>
+						<td>✓</td>
+					</tr>
+					<tr class="impair">
+						<td>File</td>
+						<td>✓</td>
+						<td>X</td>
+						<td>X</td>
+					</tr>
+					<tr>
+						<td>Geolocation</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr class="impair">
+						<td>Media</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+					</tr>
+					<tr>
+						<td>Network</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr class="impair">
+						<td>Notification</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>				
+					<tr>
+						<td>Storage</td>
+						<td>✓</td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+				</table>
+				<div id="btnScrollTop"><p>Haut de page</p></div>
+			</section>
+			<footer>
+				<p>2013 © Patrick Freedom Mayer</p>
+			</footer>
+		</div>
+		<script type="text/javascript" src="cordova-2.5.0.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+			app.initialize();
+		</script>
+	</body>
+</html>
